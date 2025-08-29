@@ -1,6 +1,6 @@
 # 🏋️‍♂️ FIT PHYSIQUE · Tu mejor versión 💪
 
-[![FIT PHYSIQUE](./public/image-preview.png)](fit-physique-phi.vercel.app)
+[![FIT PHYSIQUE](./public/image-preview.png)](https://fit-physique-phi.vercel.app/)
 
 Bienvenido a **Fit Physique**, tu espacio digital para inspirarte, entrenar y alcanzar tu mejor versión.
 Creemos en la **disciplina, la constancia y la comunidad** como pilares fundamentales para transformar no solo tu cuerpo, sino también tu vida.

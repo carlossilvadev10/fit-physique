@@ -35,11 +35,11 @@ const Header = () => {
                 {/* hide/open menu button */}
                 <div className = "flex items-center gap-4">
                     {/* login & register buttons */}
-                    <div className = "flex items-center text-white gap-4">
-                        <button className = "hover:text-accent transition-all text-base uppercase font-medium">
+                    <div className = "hidden md:flex items-center text-white gap-4">
+                        <button className = "transition-all text-base uppercase font-medium bg-accent hover:bg-[#af0511] p-3 rounded-md">
                             Iniciar sesión
                         </button>
-                        <button className = "hover:text-accent transition-all text-base uppercase font-medium">
+                        <button className = "transition-all text-base uppercase font-medium bg-primary-100 hover:bg-[#3c3b3b] p-3 rounded-md">
                             Registrarse
                         </button>
                     </div>

@@ -54,6 +54,14 @@ const MobileNav = ({ containerStyles } : { containerStyles: string }) => {
 
     return (
         <nav className = {`${containerStyles}`}>
+            <div className = "flex md:hidden items-center justify-center text-white gap-4">
+                <button className = "w-auto transition-all text-base uppercase font-medium bg-accent hover:bg-[#af0511] p-3 rounded-md">
+                    Iniciar sesión
+                </button>
+                <button className = "w-auto transition-all text-base uppercase font-medium bg-primary-100 hover:bg-[#3c3b3b] p-3 rounded-md">
+                    Registrarse
+                </button>
+            </div>
             {
                 links.map((link, i) => (
                     <ScrollLink key = {i} to = {link.target} offset = {link.offset} smooth spy activeClass = {`${!isMobile && "active"}`} className = "cursor-pointer hover:text-accent transition-all">

@@ -67,10 +67,10 @@ const Team = () => {
     return (
         <section className = "py-12 xl:h-[130vh]" id = "team">
             <div className = "flex flex-col items-center justify-center container mx-auto h-full">
-                <motion.h2 variants = {fadeIn("up", 0.4)} initial = "hidden" whileInView = "show" viewport = {{ once: false, amount: 0.2 }} className = "h2 text-center mb-6">
+                <motion.h2 variants = {fadeIn("up", 0.4)} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.2 }} className = "h2 text-center mb-6">
                     Nuestros entrenadores
                 </motion.h2>
-                <motion.div variants = {fadeIn("up", 0.6)} initial = "hidden" whileInView = "show" viewport = {{ once: false, amount: 0.2 }} className = "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <motion.div variants = {fadeIn("up", 0.6)} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.2 }} className = "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                     {
                         trainerData.map((trainer, i) => (
                             <div key = {i} className = "flex flex-col items-center">
@@ -101,7 +101,7 @@ const Team = () => {
                         ))
                     }
                 </motion.div>
-                <motion.div variants = {fadeIn("up", 0.6)} initial = "hidden" whileInView = "show" viewport = {{ once: false, amount: 0.2 }} className = "">
+                <motion.div variants = {fadeIn("up", 0.6)} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.2 }} className = "">
                     <CustomButton text = "Ver todos los entrenadores" containerStyles = "w-[196px] h-[62px]" />
                 </motion.div>
             </div>

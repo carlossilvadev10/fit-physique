@@ -56,12 +56,12 @@ const statsItem = {
 
 const Achievements = () => {
     const ref = useRef(null);
-    const isInView = useInView(ref);
+    const isInView = useInView(ref, { once: true });
 
     return (
         <section>
             <div className = "container mx-auto">
-                <motion.div variants = {statsContainerVariant} initial = "hidden" whileInView = "show" viewport = {{ once: false, amount: 0.3 }} className = "grid grid-cols-2 lg:grid-cols-4 gap-16">
+                <motion.div variants = {statsContainerVariant} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.3 }} className = "grid grid-cols-2 lg:grid-cols-4 gap-16">
                     {
                         stats.map((item, i) => (
                             <motion.div variants = {statsItem} key = {i} className = "flex flex-col items-center justify-center">

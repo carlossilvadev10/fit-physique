@@ -65,7 +65,7 @@ const Brands = () => {
     return (
         <section className = "py-8" id = "contact">
             <div className = "container mx-auto">
-                <motion.div variants = {brandContainerVariant} initial = "hidden" whileInView = "show" viewport = {{ once: false, amount: 0.3 }} className = "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 py-8">
+                <motion.div variants = {brandContainerVariant} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.3 }} className = "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 py-8">
                     {
                         brandImages.map((img, i) => (
                             <motion.div variants = {brandItem} key = {i} className = "">

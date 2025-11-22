@@ -36,7 +36,7 @@ const classes = [
 const Classes = () => {
     return (
         <section className = "" id = "class">
-            <motion.div variants = {fadeIn("up", 0.6)} initial = "hidden" whileInView = "show" viewport = {{ once: false, amount: 0.2 }} className = "grid grid-cols-1 lg:grid-cols-2">
+            <motion.div variants = {fadeIn("up", 0.6)} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.2 }} className = "grid grid-cols-1 lg:grid-cols-2">
                 {
                     classes.map((item, i) => (
                         <div key = {i} className = "flex flex-col items-center justify-center relative w-full h-[300px] lg:h-[485px]">
@@ -45,13 +45,13 @@ const Classes = () => {
                             <Image src = {item.img} alt = {item.imgAlt} fill className = "object-cover" />
                             {/* text & btn */}
                             <div className = "flex flex-col items-center justify-center gap-4 max-w-[380px] text-center z-30">
-                                <motion.h3 variants = {fadeIn("up", 0.4)} initial = "hidden" whileInView = "show" viewport = {{ once: false, amount: 0.2 }} className = "h3 text-accent">
+                                <motion.h3 variants = {fadeIn("up", 0.4)} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.2 }} className = "h3 text-accent">
                                     {item.name}
                                 </motion.h3>
-                                <motion.p variants = {fadeIn("up", 0.6)} initial = "hidden" whileInView = "show" viewport = {{ once: false, amount: 0.2 }} className = "text-white">
+                                <motion.p variants = {fadeIn("up", 0.6)} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.2 }} className = "text-white">
                                     {item.description}
                                 </motion.p>
-                                <motion.div variants = {fadeIn("up", 0.8)} initial = "hidden" whileInView = "show" viewport = {{ once: false, amount: 0.2 }} className = "">
+                                <motion.div variants = {fadeIn("up", 0.8)} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.2 }} className = "">
                                     <CustomButton text = "Leer más" containerStyles = "w-[164px] h-[46px]" />
                                 </motion.div>
                             </div>

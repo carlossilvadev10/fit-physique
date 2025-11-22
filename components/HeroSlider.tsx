@@ -15,13 +15,13 @@ const HeroSlider = () => {
             <SwiperSlide>
                 <div className = "h-full flex justify-end pt-48">
                     <div className = "flex flex-col items-center lg:items-start lg:max-w-[700px]">
-                        <motion.h1 variants = {fadeIn("up", 0.4)} initial = "hidden" whileInView = "show" viewport = {{ once: false, amount: 0.2 }} className = "h1 text-center lg:text-left mb-2">
+                        <motion.h1 variants = {fadeIn("up", 0.4)} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.2 }} className = "h1 text-center lg:text-left mb-2">
                             <span className = "text-accent">Trabajo duro, </span> éxito seguro
                         </motion.h1>
-                        <motion.p variants = {fadeIn("up", 0.6)} initial = "hidden" whileInView = "show" viewport = {{ once: false, amount: 0.2 }} className = "text-white italic text-center lg:text-left mb-4">
+                        <motion.p variants = {fadeIn("up", 0.6)} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.2 }} className = "text-white italic text-center lg:text-left mb-4">
                             En Fit Physique, creemos en la disciplina, la pasión y la constancia como el camino para alcanzar grandes resultados.
                         </motion.p>
-                        <motion.div variants = {fadeIn("up", 0.8)} initial = "hidden" whileInView = "show" viewport = {{ once: false, amount: 0.2 }} className = "">
+                        <motion.div variants = {fadeIn("up", 0.8)} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.2 }} className = "">
                             <CustomButton text = "Empieza hoy" containerStyles = "w-[196px] h-[62px]" />
                         </motion.div>
                     </div>
@@ -30,13 +30,13 @@ const HeroSlider = () => {
             <SwiperSlide>
                 <div className = "h-full flex justify-end pt-48">
                     <div className = "flex flex-col items-center lg:items-start lg:max-w-[700px]">
-                        <motion.h1 variants = {fadeIn("up", 0.4)} initial = "hidden" whileInView = "show" viewport = {{ once: false, amount: 0.2 }} className = "h1 text-center lg:text-left mb-2">
+                        <motion.h1 variants = {fadeIn("up", 0.4)} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.2 }} className = "h1 text-center lg:text-left mb-2">
                             <span className = "text-accent">Tu cuerpo, </span> tu mejor inversión
                         </motion.h1>
-                        <motion.p variants = {fadeIn("up", 0.6)} initial = "hidden" whileInView = "show" viewport = {{ once: false, amount: 0.2 }} className = "text-white italic text-center lg:text-left mb-4">
+                        <motion.p variants = {fadeIn("up", 0.6)} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.2 }} className = "text-white italic text-center lg:text-left mb-4">
                             Cada entrenamiento en Fit Physique es un paso hacia una versión más fuerte, sana y llena de energía de ti mismo.
                         </motion.p>
-                        <motion.div variants = {fadeIn("up", 0.8)} initial = "hidden" whileInView = "show" viewport = {{ once: false, amount: 0.2 }} className = "">
+                        <motion.div variants = {fadeIn("up", 0.8)} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.2 }} className = "">
                             <CustomButton text = "Empieza hoy" containerStyles = "w-[196px] h-[62px]" />
                         </motion.div>
                     </div>
@@ -45,13 +45,13 @@ const HeroSlider = () => {
             <SwiperSlide>
                 <div className = "h-full flex justify-end pt-48">
                     <div className = "flex flex-col items-center lg:items-start lg:max-w-[700px]">
-                        <motion.h1 variants = {fadeIn("up", 0.4)} initial = "hidden" whileInView = "show" viewport = {{ once: false, amount: 0.2 }} className = "h1 text-center lg:text-left mb-2">
+                        <motion.h1 variants = {fadeIn("up", 0.4)} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.2 }} className = "h1 text-center lg:text-left mb-2">
                             <span className = "text-accent">Juntos, </span> hacia tus metas
                         </motion.h1>
-                        <motion.p variants = {fadeIn("up", 0.6)} initial = "hidden" whileInView = "show" viewport = {{ once: false, amount: 0.2 }} className = "text-white italic text-center lg:text-left mb-4">
+                        <motion.p variants = {fadeIn("up", 0.6)} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.2 }} className = "text-white italic text-center lg:text-left mb-4">
                             En Fit Physique no entrenas solo, entrenas con una comunidad que te impulsa, te motiva y celebra cada uno de tus logros.
                         </motion.p>
-                        <motion.div variants = {fadeIn("up", 0.8)} initial = "hidden" whileInView = "show" viewport = {{ once: false, amount: 0.2 }} className = "">
+                        <motion.div variants = {fadeIn("up", 0.8)} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.2 }} className = "">
                             <CustomButton text = "Empieza hoy" containerStyles = "w-[196px] h-[62px]" />
                         </motion.div>
                     </div>

@@ -53,10 +53,10 @@ const Testimonial = () => {
     return (
         <section className = "py-12 xl:py-24" id = "testimonial">
             <div className = "container mx-auto">
-                <motion.h2 variants = {fadeIn("up", 0.4)} initial = "hidden" whileInView = "show" viewport = {{ once: false, amount: 0.2 }} className = "h2 text-center">
+                <motion.h2 variants = {fadeIn("up", 0.4)} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.2 }} className = "h2 text-center">
                     Testimonios de nuestros clientes
                 </motion.h2>
-                <motion.div variants = {fadeIn("up", 0.6)} initial = "hidden" whileInView = "show" viewport = {{ once: false, amount: 0.2 }} className = "">
+                <motion.div variants = {fadeIn("up", 0.6)} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.2 }} className = "">
                     <Swiper slidesPerView = {1} spaceBetween = {30} modules = {[Pagination]} pagination = {{ clickable: true }} breakpoints = {{ 768: { slidesPerView: 2, spaceBetween: 30 }, 1024: { slidesPerView: 3, spaceBetween: 30 } }} className = "h-80">
                         {
                             testimonialData.map((person, i) => (

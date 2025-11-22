@@ -16,10 +16,10 @@ const Blog = () => {
     return (
         <section className = "bg-primary-300 text-white py-24" id = "blog">
             <div className = "container mx-auto">
-                <motion.h2 variants = {fadeIn("up", 0.4)} initial = "hidden" whileInView = "show" viewport = {{ once: false, amount: 0.2 }} className = "h2 text-center mb-8">
+                <motion.h2 variants = {fadeIn("up", 0.4)} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.2 }} className = "h2 text-center mb-8">
                     Blogs
                 </motion.h2>
-                <motion.div variants = {fadeIn("up", 0.6)} initial = "hidden" whileInView = "show" viewport = {{ once: false, amount: 0.2 }} className = "">
+                <motion.div variants = {fadeIn("up", 0.6)} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.2 }} className = "">
                     <Swiper slidesPerView = {1} spaceBetween = {30} breakpoints = {{ 768: { slidesPerView: 2, spaceBetween: 15 }, 1024: { slidesPerView: 3 }, 1400: { slidesPerView: 4 } }} className = "h-[420px] md:max-w-[660px] lg:max-w-none mb-8">
                         {
                             blogData.map((blog, i) => (
@@ -43,7 +43,7 @@ const Blog = () => {
                         <SwiperNavButtons containerStyles = "flex justify-between gap-1 absolute w-full max-w-[370px] sm:max-w-[620px] md:max-w-[960px] xl:max-w-[1320px] right-0 bottom-[16rem] left-0 mx-auto z-50" btnStyles = "flex items-center justify-center text-white w-14 h-14 bg-accent transition-all dutaion-300" iconStyles = "text-2xl" />
                     </Swiper>
                 </motion.div>
-                <motion.div variants = {fadeIn("up", 0.8)} initial = "hidden" whileInView = "show" viewport = {{ once: false, amount: 0.2 }} className = "">
+                <motion.div variants = {fadeIn("up", 0.8)} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.2 }} className = "">
                     <CustomButton text = "Ver todos" containerStyles = "block w-[196px] h-[62px] mx-auto" />
                 </motion.div>
             </div>

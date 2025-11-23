@@ -42,7 +42,7 @@ const Footer = () => {
     return (
         <footer className = "bg-primary-300 pt-24">
             <div className = "container mx-auto pb-2">
-                <motion.div variants = {footerContainerVariant} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.3 }} className = "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12 text-white">
+                <motion.div variants = {footerContainerVariant} initial = "hidden" whileInView = "show" viewport = {{ once: true, amount: 0.3 }} className = "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-12 text-white">
                     <motion.div variants = {footerItem} className = "flex flex-col gap-4">
                         <Link href = "#">
                             <Image src = "/assets/img/logo.png" alt = "logo" width = {117} height = {55} />
@@ -133,7 +133,7 @@ const Footer = () => {
                     </motion.div>
                 </motion.div>
             </div>
-            <div className = "text-white border-t border-white/20 py-12">
+            <div className = "text-white border-t border-white/20 py-12 mt-8">
                 <div className = "container mx-auto h-full">
                     <div className = "flex items-center justify-between h-full">
                         <span className = "">Copyright &copy; {new Date().getFullYear()} Fyt Physique. Todos los derechos reservados. <a href = "https://github.com/carlossilvadev10" target = "_blank" rel = "noopener noreferrer" className = "font-semibold">carlossilvadev10</a>.</span>

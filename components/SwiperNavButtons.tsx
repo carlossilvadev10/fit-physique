@@ -4,7 +4,7 @@ import React from "react";
 import { useSwiper } from "swiper/react";
 import { PiCaretLeftBold, PiCaretRightBold } from "react-icons/pi";
 
-const SwiperNavButtons = ({ containerStyles, btnStyles, iconStyles } : { containerStyles: string, btnStyles: string, iconStyles: string }) => {
+const SwiperNavButtons = ({ containerStyles, btnStyles, iconStyles }: { containerStyles: string, btnStyles: string, iconStyles: string }) => {
     const swiper = useSwiper();
 
     return (

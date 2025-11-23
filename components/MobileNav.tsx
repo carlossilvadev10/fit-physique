@@ -47,7 +47,7 @@ const links = [
     },
 ]
 
-const MobileNav = ({ containerStyles } : { containerStyles: string }) => {
+const MobileNav = ({ containerStyles, closeMenu } : { containerStyles: string,  closeMenu?: () => void }) => {
     const isMobile = useMediaQuery({
         query: "(max-width: 640px)",
     })
@@ -64,7 +64,7 @@ const MobileNav = ({ containerStyles } : { containerStyles: string }) => {
             </div>
             {
                 links.map((link, i) => (
-                    <ScrollLink key = {i} to = {link.target} offset = {link.offset} smooth spy activeClass = {`${!isMobile && "active"}`} className = "cursor-pointer hover:text-accent transition-all">
+                    <ScrollLink key = {i} to = {link.target} offset = {link.offset} smooth spy activeClass = {`${!isMobile && "active"}`} onClick = {() => closeMenu && closeMenu()} className = "cursor-pointer hover:text-accent transition-all">
                         {link.name}
                     </ScrollLink>
                 ))

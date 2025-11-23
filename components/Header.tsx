@@ -29,7 +29,7 @@ const Header = () => {
                     <Image src = "/assets/img/logo.png" width = {117} height = {55} alt = "logo" />
                 </Link>
                 {/* mobile nav */}
-                <MobileNav containerStyles = {`flex xl:hidden flex-col text-center w-full left-0 text-base uppercase font-medium text-white gap-8 absolute inset-x-0 top-full bg-primary-200 transition-all ${openNav ? "max-h-max pt-8 pb-10 border-t border-white/10" : "max-h-0 pt-0 pb-0 overflow-hidden border-white/10"}`} />
+                <MobileNav containerStyles = {`flex xl:hidden flex-col text-center w-full left-0 text-base uppercase font-medium text-white gap-8 absolute inset-x-0 top-full bg-primary-200 transition-all ${openNav ? "max-h-max pt-8 pb-10 border-t border-white/10" : "max-h-0 pt-0 pb-0 overflow-hidden border-white/10"}`} closeMenu = {() => setOpenNav(false)} />
                 {/* desktop nav */}
                 <Nav containerStyles = "py-12 gap-4 text-white text-base uppercase font-medium transition-all hidden xl:flex" />
                 {/* hide/open menu button */}

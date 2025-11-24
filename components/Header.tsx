@@ -5,7 +5,7 @@ import Nav from "./Nav";
 import MobileNav from "./MobileNav";
 import Link from "next/link";
 import Image from "next/image";
-import { MdMenu } from "react-icons/md";
+import { MdClose, MdMenu } from "react-icons/md";
 
 const Header = () => {
     const [headerActive, setHeaderActive] = useState(false);
@@ -43,8 +43,14 @@ const Header = () => {
                             Registrarse
                         </button>
                     </div>
-                    <button className = "text-white xl:hidden" onClick= {() => setOpenNav(!openNav)}>
-                        <MdMenu className = "text-4xl" />
+                    <button className = "text-white xl:hidden transition-transform duration-300" onClick = {() => setOpenNav(!openNav)} aria-label = {openNav ? "Cerrar menú" : "Abrir menú"} >
+                        {
+                            openNav ? (
+                                <MdClose className = "text-4xl" />
+                            ) : (
+                                <MdMenu className = "text-4xl" />
+                            )
+                        }
                     </button>
                 </div>
             </div>
